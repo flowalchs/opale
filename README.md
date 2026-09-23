@@ -1,4 +1,5 @@
-# Opale Redmine Theme
+Opale Dark
+=====
 
 A Redmine 5.x, 6.x & 7.x theme.
 

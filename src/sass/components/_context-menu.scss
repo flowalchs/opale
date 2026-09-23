@@ -51,7 +51,8 @@
     > ul > li > ul {
       @include shadows.nice-shadow(2);
 
-      border: 0 none !important;
+      border: 0 none !important; // stylelint-disable-line declaration-no-important
+      background-color: #16213e;
     }
 
     ul {
@@ -64,14 +65,26 @@
       border-radius: variables.$border-radius-small;
       background: transparent;
 
+      > a {
+        color: #e0e0e0;
+
+        &:hover {
+          color: variables.$white;
+        }
+      }
+
       &:hover {
-        background-color: variables.$pagination-hover-bg;
+        background-color: rgba(variables.$white, .1);
       }
     }
 
     a.disabled,
     a.disabled:hover {
       color: variables.$gray-750;
+    }
+    
+    .separator {
+      border-color: #0f3460;
     }
   }
 }

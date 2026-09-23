@@ -105,7 +105,8 @@ div.jstElements {
     opacity: 1;
     background-color: transparent;
     box-shadow: none;
-    color: variables.$gray-800;
+    color: #1f1f1f;
+    filter: invert(1);
     vertical-align: top;
 
     &::before {
@@ -114,8 +115,8 @@ div.jstElements {
 
     &:hover,
     &:focus {
-      background-color: color.adjust(variables.$tab-hover-bg, $lightness: -3%);
-      color: variables.$gray-900;
+      background-color: rgba(variables.$black, .15);
+      color: variables.$white;
     }
   }
 
@@ -173,7 +174,7 @@ div.jstElements {
 
   .jstb_pre::before {
       content: "pre";
-      color: #333;
+      color: #1f1f1f;
       font-size: 10px;
       font-weight: 700
   }
