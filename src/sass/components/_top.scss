@@ -177,8 +177,14 @@
   background-color: variables.$header-bg;
   color: variables.$header-text;
 
-  > h1 {
+  >h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: variables.$header-padding-vertical variables.$header-padding-horizontal;
+    overflow: hidden;
+    font-size: 1.375rem;
+    white-space: nowrap;
 
     @if variables.$use-logo {
       padding-left: variables.$logo-image-width + variables.$logo-position-horizontal + variables.$logo-space;
@@ -205,6 +211,15 @@
     .current-project {
       display: inline-block;
     }
+
+    .breadcrumbs {
+      display: block;
+      margin-bottom: 1px;
+      color: variables.$gray-500;
+      font-size: .8rem;
+      letter-spacing: .04em;
+      line-height: 1.1;
+    }
   }
 
   a {
@@ -214,9 +229,12 @@
 
 #quick-search {
   #header & {
+    display: flex;
+    align-items: center;
+    min-block-size: 2.75rem;
     margin-top: math.floor((variables.$header-title-line-height + variables.$header-padding-vertical * 2 - variables.$input-height-base) * .5) - 1px;
     margin-right: variables.$header-padding-horizontal;
-    float: right;
+    float: inline-end;
     color: variables.$header-text;
   }
 
@@ -484,35 +502,35 @@
     a {
       display: block;
       padding: variables.$tab-padding-vertical (variables.$tab-padding-horizontal * 2);
-      border-top: 1px solid variables.$main-menu-border;
-      color: variables.$main-menu-link;
+    border-top: 1px solid variables.$main-menu-border;
+    color: variables.$main-menu-link;
 
-      &:hover,
-      &:focus {
-        background-color: variables.$component-active-bg;
-        color: variables.$component-active-color;
-        text-decoration: none;
-      }
+    &:hover,
+    &:focus {
+      background-color: variables.$component-active-bg;
+      color: variables.$component-active-color;
+      text-decoration: none;
     }
+  }
 
     > li:first-child > a {
-      border: 0 none;
-    }
+    border: 0 none;
   }
+}
 
-  .tabs-buttons {
-    padding-left: 0;
-    border-color: variables.$main-menu-border;
-    background-color: variables.$main-menu-bg;
+.tabs-buttons {
+  padding-left: 0;
+  border-color: variables.$main-menu-border;
+  background-color: variables.$main-menu-bg;
 
     > button {
-      box-sizing: border-box;
-      height: $tabs-height - 1px;
-      background-color: variables.$main-menu-bg;
+    box-sizing: border-box;
+    height: $tabs-height - 1px;
+    background-color: variables.$main-menu-bg;
 
-      &:hover {
-        background-color: variables.$main-menu-bg-hover;
-      }
+    &:hover {
+      background-color: variables.$main-menu-bg-hover;
     }
   }
+}
 }
