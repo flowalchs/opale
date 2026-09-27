@@ -170,6 +170,7 @@ $wiki-font-size:                16px !default;
 $wiki-line-height:              1.6 !default;
 $wiki-preview-bg:               $body-bg !default;
 $wiki-copy-pre-padding:         0 3px 3px 3px !default;
+$wiki-heading-border:           #0f3460 !default;
 
 $toc-bg:                        #16213e !default;
 $toc-border:                    #0f3460 !default;
@@ -557,7 +558,7 @@ $header-bg:                     $brand-primary !default;
 $header-text:                   $brand-text !default;
 $header-link:                   $brand-text !default;
 $header-root:                   $brand-accent !default;
-$header-padding-vertical:       10px !default;
+$header-padding-vertical:       4px !default;
 $header-padding-horizontal:     $padding-side !default;
 $header-title-size:             $font-size-h3 !default;
 $header-title-line-height:      $line-height-computed * 1.5 !default;
@@ -567,7 +568,7 @@ $responsive-header-height:      54px !default;
 $flyout-menu-bg:                shade($header-bg, 700) !default;
 $flyout-menu-text:              $white !default;
 $flyout-menu-link:              $white !default;
-$flyout-menu-link-active-bg:    shade($header-bg, 50) !default;
+$flyout-menu-link-active-bg:    #1a2744 !default;
 $flyout-menu-link-active:       $text-color !default;
 $flyout-menu-header-bg:         shade($header-bg, 800) !default;
 $flyout-menu-header-border:     shade($header-bg, 800) !default;
@@ -651,7 +652,9 @@ $sidebar-link-active-side:      $red !default;
 $sidebar-link-active-text:      $white !default;
 $sidebar-switch-top-position:   1px !default;
 $sidebar-switch-size:           18px !default;
-
+$sidebar-switch-bg:             transparent !default;
+$sidebar-switch-hover-bg:       rgb(15 52 96 / 0.3) !default;
+$sidebar-switch-border:         #0f3460 !default;
 
 // Flash messages (alerts)
 
@@ -707,6 +710,10 @@ $tooltip-border:                #0f3460 !default;
 $tooltip-text:                  #e0e0e0 !default;
 $tooltip-link:                  $link-color !default;
 
+// Footer
+
+$footer-border-color:           #0f3460 !default;
+$footer-text-color:             #7a8bb5 !default;
 
 // Issue
 
