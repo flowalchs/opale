@@ -53,14 +53,14 @@ div.wiki {
 
   h1, .h1 {
     padding-bottom: .3em;
-    border-bottom: 1px solid variables.$gray-400;
+    background: linear-gradient(to right, variables.$wiki-heading-border, transparent) left bottom / 100% 1px no-repeat;
     font-size: variables.$font-size-h1;
     line-height: 1.2;
   }
 
   h2, .h2 {
     padding-bottom: .3em;
-    border-bottom: 1px solid variables.$gray-400;
+    background: linear-gradient(to right, variables.$wiki-heading-border, transparent) left bottom / 100% 1px no-repeat;
     font-size: variables.$font-size-h2;
     line-height: 1.225;
   }
