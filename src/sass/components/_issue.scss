@@ -746,6 +746,8 @@ div.thumbnails {
 
   .journal-content .journal-details {
     padding-left: calc(variables.$bubble-padding-horizontal + variables.$issue-padding);
+    color: variables.$gray-500;
+    font-size: variables.$font-size-small;
   }
 
   form {
