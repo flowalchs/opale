@@ -41,29 +41,29 @@ table.gantt-table {
     top: 0;
     height: 16px;
     overflow: hidden;
-    border-block: 1px solid variables.$gray-500;
-    border-inline-start: 1px solid variables.$gray-500 !important;
+    border-block: 1px solid variables.$pagination-inactive-border;
+    border-inline-start: 1px solid variables.$pagination-inactive-border !important;
     text-align: center;
 
     &[style*="background"] {
-      background: variables.$gray-200 !important;
+      background: variables.$pagination-inactive-border !important;
     }
 
     &.nwday {
-      background-color: variables.$gray-200;
-      color: variables.$gray-700;
+      background-color: variables.$pagination-inactive-border !important;
+      color: variables.$pagination-color;
     }
   }
 
   #gantt_area .gantt_hdr {
-    border-inline-end: 1px solid variables.$gray-500;
+    border-inline-end: 1px solid variables.$pagination-inactive-border !important;
     border-inline-start: 0;
   }
 
   .gantt_subjects_container:not(.draw_selected_columns) .gantt_hdr,
   .last_gantt_selected_column .gantt_hdr {
     z-index: 1;
-    border-inline-end: 1px solid variables.$gray-500;
+    border-inline-end: 1px solid variables.$pagination-inactive-border !important;
   }
 
   .last_gantt_selected_column .gantt_selected_column_container,
@@ -73,7 +73,7 @@ table.gantt-table {
 
   .gantt_subjects_column {
     .gantt_hdr {
-      border-left: 1px solid variables.$gray-500;
+      border-left: 1px solid variables.$pagination-inactive-border !important;
     }
 
     + td {
@@ -147,9 +147,13 @@ table.gantt-table {
       @include text-truncate.text-truncate;
 
       width: 100%;
-      height: 16px;
-      line-height: 16px;
+      height: 18px;
+      line-height: 18px;
     }
+  }
+
+  #gantt_area {
+    scrollbar-color: variables.$pagination-inactive-border variables.$pagination-inactive-bg;
   }
 
   .task {
