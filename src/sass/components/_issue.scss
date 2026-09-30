@@ -281,7 +281,7 @@
     .label {
       box-sizing: border-box;
       float: left;
-      color: variables.$gray-750;
+      color: variables.$meta-text-color;
     }
 
     .value {
@@ -598,7 +598,7 @@ div.thumbnails {
     > a.journal-link {
       padding-left: variables.$issue-attribute-padding-h;
       opacity: 1;
-      color: variables.$gray-750;
+      color: variables.$meta-text-color;
 
       &::before {
         content: "";
@@ -613,7 +613,7 @@ div.thumbnails {
     padding: variables.$bubble-padding-vertical variables.$bubble-padding-horizontal;
     border-radius: variables.$panel-border-radius variables.$panel-border-radius 0 0;
     background-color: variables.$bubble-bg;
-    color: variables.$gray-750;
+    color: variables.$meta-text-color;
     font-size: variables.$font-size-list;
     font-weight: variables.$font-weight-normal;
 
@@ -626,7 +626,7 @@ div.thumbnails {
     }
 
     .journal-link {
-      color: variables.$gray-750;
+      color: variables.$meta-text-color;
     }
 
     .update-info {
