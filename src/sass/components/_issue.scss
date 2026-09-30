@@ -748,6 +748,10 @@ div.thumbnails {
     font-size: variables.$font-size-small;
   }
 
+  .journal-content .journal-note:not(.wiki) {
+    padding: 0 variables.$issue-padding variables.$issue-padding;
+  }
+
   form {
     padding: variables.$bubble-padding-vertical variables.$bubble-padding-horizontal variables.$bubble-padding-horizontal;
     background-color: variables.$bubble-bg;
