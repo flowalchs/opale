@@ -158,19 +158,11 @@ img {
   }
 
   > ul.watchers {
-    margin-left: variables.$sidebar-padding-horizontal;
-
     > li {
       @include clearfix.clearfix;
 
       display: block;
       margin-bottom: variables.$sidebar-padding-vertical;
-
-      @if variables.$sidebar-position == "left" {
-        padding-right: variables.$sidebar-padding-horizontal;
-      } @else {
-        padding-left: variables.$sidebar-padding-horizontal;
-      }
 
       > a:not(.icon-only) {
         display: inline;
