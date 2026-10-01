@@ -52,7 +52,7 @@
       @include shadows.nice-shadow(2);
 
       border: 0 none !important; // stylelint-disable-line declaration-no-important
-      background-color: #16213e;
+      background-color: variables.$surface-bg;
     }
 
     ul {
@@ -66,7 +66,7 @@
       background: transparent;
 
       > a {
-        color: #e0e0e0;
+        color: variables.$text-color;
 
         &:hover {
           color: variables.$white;
@@ -74,17 +74,17 @@
       }
 
       &:hover {
-        background-color: rgba(variables.$white, .1);
+        background-color: variables.$hover-bg;
       }
     }
 
     a.disabled,
     a.disabled:hover {
-      color: variables.$gray-750;
+      color: variables.$meta-text-color;
     }
     
     .separator {
-      border-color: #0f3460;
+      border-color: variables.$border-color;;
     }
   }
 }
