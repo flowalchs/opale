@@ -165,7 +165,7 @@ ul.cal {
         padding: variables.$table-cell-padding;
         border: 1px solid variables.$table-border-color;
         border-radius: variables.$border-radius-base;
-        background: color.adjust(variables.$yellow, $lightness: 40%);
+        background: variables.$hover-bg;
         box-shadow: variables.$panel-shadow;
       }
     }
