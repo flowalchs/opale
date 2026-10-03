@@ -1,4 +1,4 @@
-Opale Dark Blue
+Opale Dark Modern
 =====
 
 A Redmine 5.x, 6.x & 7.x theme.
@@ -14,7 +14,7 @@ A Redmine 5.x, 6.x & 7.x theme.
 
 ## Main features
 
-* Left sidebar,
+* Right sidebar,
 * Colored trackers links,
 * Jira-inspired priority icons,
 * Customizable with SCSS.
